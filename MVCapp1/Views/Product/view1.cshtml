@@ -1,0 +1,27 @@
+﻿<h1>helloooooooooooooooooooooooooooooooooooooooo</h1>
+@{
+    int x = 10;
+    int y = x + 20;
+}
+<h2> x = @x , y=  @y</h2>
+@if(x > y) 
+{
+    <p>x is greater</p>
+}
+else
+{
+    <p>y is greater</p>
+}
+<ol>
+@for (int i = 0; i <= 10; i++)
+{
+        if (i % 2 == 0)
+        {
+            <li style="color:red">i = @(i + 1)</li>
+        }
+        else
+        {
+            <li style="color:blue">i = @(i + 1)</li>
+        }
+}
+</ol>
